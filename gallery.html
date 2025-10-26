@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prayagraj Tourism</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS Link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <div class="logo">Prayag<span>raj</span></div>
+
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger">☰</label>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="explore.html">Explore the City</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="help.html">Help & FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-icons">
+        <span>📞</span>
+        <span>🔍</span>
+        <span>👤</span>
+      </div>
+    </div>
+  </header>
+  
+  
+  
+  
+  <style>
+  
+  /* RESPONSIVE HERO SECTION */
+@media (max-width: 1024px) {
+  .hero { height: 500px; }
+  .hero h1 { font-size: 2.4rem; }
+  .hero p { font-size: 1rem; }
+  .search-box input { width: 65%; }
+}
+
+@media (max-width: 768px) {
+  .hero { height: 420px; }
+  .hero h1 { font-size: 1.9rem; }
+  .hero p { font-size: 0.95rem; }
+  .search-box input { width: 60%; }
+}
+
+@media (max-width: 480px) {
+  .hero { height: 380px; }
+  .hero h1 { font-size: 1.6rem; }
+  .hero p { font-size: 0.85rem; margin-bottom: 15px; }
+  .search-box { flex-direction: column; gap: 10px; }
+  .search-box input, 
+  .search-box button { width: 100%; border-radius: 35px; }
+}
+</style>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Discover the Beauty of Prayagraj</h1>
+    <p>Explore the culture, heritage, and unforgettable experiences of our city.</p>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search destinations, hotels, or experiences...">
+      <button>🔍 Search</button>
+    </div>
+
+    <a href="#gallery" class="explore-btn">Explore</a>
+  </div>
+</section>
+
+
+<section class="top-attractions">
+  <h2>Top Attractions in Prayagraj</h2>
+  <p>Explore the most visited and loved destinations of our city.</p>
+
+  <div class="attractions-grid">
+    <div class="place">
+      <img src="triveni7.webp" alt="Triveni Sangam">
+      <div class="info">
+        <h3>Triveni Sangam</h3>
+        <p>Confluence of Ganga, Yamuna, and Saraswati rivers.</p>
+      </div>
+    </div>
+
+    <div class="place">
+      <img src="allahabad_fort.png" alt="Allahabad Fort">
+      <div class="info">
+        <h3>Allahabad Fort</h3>
+        <p>Majestic fort built by Emperor Akbar on the riverbank.</p>
+      </div>
+    </div>
+
+    <div class="place">
+      <img src="anandbhawan2.jpg" alt="Anand Bhavan">
+      <div class="info">
+        <h3>Anand Bhavan</h3>
+        <p>Historic home of Nehru family, now a museum of heritage.</p>
+      </div>
+    </div>
+
+    <div class="place">
+      <img src="khusro-bagh.jpg" alt="Khusro Bagh">
+      <div class="info">
+        <h3>Khusro Bagh</h3>
+        <p>Mughal-style garden and tomb complex of Prince Khusro.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="cultural-experience">
+  <h2>Experience the Culture</h2>
+  <p>Discover the traditions, art, and vibrant lifestyle of our city.</p>
+
+  <div class="culture-gallery">
+    <div class="culture-box">
+      <img src="festival.jpg" alt="Festival">
+      <div class="overlay">
+        <h3>Festivals</h3>
+        <p>Colorful festivals celebrated with joy and devotion.</p>
+      </div>
+    </div>
+
+    <div class="culture-box">
+      <img src="art.jpg" alt="Traditional Art">
+      <div class="overlay">
+        <h3>Traditional Art</h3>
+        <p>Local artisans showcasing the beauty of handmade crafts.</p>
+      </div>
+    </div>
+
+    <div class="culture-box">
+      <img src="music.jpg" alt="Music & Dance">
+      <div class="overlay">
+        <h3>Music & Dance</h3>
+        <p>Rhythmic beats and soulful moves that define our culture.</p>
+      </div>
+    </div>
+
+    <div class="culture-box">
+      <img src="food.webp" alt="Cuisine">
+      <div class="overlay">
+        <h3>Local Cuisine</h3>
+        <p>Taste the authentic flavors that make our city special.</p>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+
+
+
+
+
+<section class="tour-slider">
+  <h2>Explore Beautiful Destinations</h2>
+  <div class="slider-container">
+    <div class="slide-track">
+      <div class="slide"><img src="museum2.jpg" alt="meseume"></div>
+      <div class="slide"><img src="Mountain.jpg" alt="Mountains"></div>
+      <div class="slide"><img src="temple.jpg" alt="Temple"></div>
+      <div class="slide"><img src="festival.jpg" alt="Festival"></div>
+      <div class="slide"><img src="city night.jpg" alt="City Night"></div>
+      <div class="slide"><img src="river.jpg" alt="River View"></div>
+      <!-- Repeat for smooth infinite loop -->
+      <div class="slide"><img src="image4.webp" alt=""></div>
+      <div class="slide"><img src="img2.jpg" alt=""></div>
+      <div class="slide"><img src="market.avif" alt=""></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="gallery" id="gallery">
+  <!-- 1️⃣ Heading -->
+  <h2>Moments from Prayagraj</h2>
+
+  <!-- 2️⃣ Subtitle -->
+  <p class="gallery-subtitle">
+    Experience the spiritual charm, colorful traditions, and timeless heritage of Prayagraj through our lens.
+  </p>
+
+  <!-- 3️⃣ Image Grid -->
+  <div class="gallery-grid">
+    <!-- 4️⃣ Image Cards with Hover + Captions -->
+    <div class="gallery-item">
+      <img src="triveni.webp" alt="Triveni Sangam">
+      <div class="caption">Triveni Sangam</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="kumbh25.jpg" alt="Kumbh Mela">
+      <div class="caption">Kumbh Mela</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="fort.png" alt="Allahabad Fort">
+      <div class="caption">Allahabad Fort</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="anand bhawan.jpg" alt="Anand Bhavan">
+      <div class="caption">Anand Bhavan</div>
+    </div>    
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.hmtl">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="help.html">Help & FAQ</a></li>
+          <li><a href="contact">contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>About</h3>
+        <ul>
+          <li><a href="#">About Prayagraj Tourism</a></li>
+          <li><a href="#">Wellness & Spas</a></li>
+          <li><a href="#">Best Time to Visit</a></li>
+          <li><a href="#">Prayag Tourist Destinations</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>📍 18-A, D.D.A SCO Complex, Defence Colony, Prayagraj</p>
+        <p>📞 +91-11-23365358, 23363607</p>
+        <p>📧 tourism@prayagrajtourism.gov.in</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>App</h3>
+        <p>Download "Apna Prayag" App:</p>
+        <a href="#"> 🔍 Google</a><br>
+        <a href="#"> ▶ Play store</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Prayagraj Tourism. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

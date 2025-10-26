@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prayagraj Tourism</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS Link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <div class="logo">Prayag<span>raj</span></div>
+
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger">☰</label>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="explore.html">Explore the City</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="help.html">Help & FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-icons">
+        <span>📞</span>
+        <span>🔍</span>
+        <span>👤</span>
+      </div>
+    </div>
+  </header>
+
+
+<style>
+
+/* Animation for hero content */
+.hero-content-new {
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+/* Keyframes for fade-in-up effect */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE HEIGHT & TEXT */
+@media (max-width: 1024px) {
+  .about-hero-new { height: 500px; }
+  .hero-title-new { font-size: 2.4rem; }
+  .hero-desc-new { font-size: 1rem; }
+}
+
+@media (max-width: 768px) {
+  .about-hero-new { height: 420px; }
+  .hero-title-new { font-size: 1.9rem; }
+  .hero-desc-new { font-size: 0.95rem; }
+  .hero-content-new { padding: 25px 20px; }
+}
+
+@media (max-width: 480px) {
+  .about-hero-new { height: 380px; }
+  .hero-title-new { font-size: 1.6rem; }
+  .hero-desc-new { font-size: 0.85rem; margin-bottom: 15px; }
+  .btn-primary-new { width: 100%; padding: 12px 0; border-radius: 35px; }
+}
+/* Animation for hero content */
+.hero-content-new {
+  animation: fadeInUp 1.5s ease-out forwards;
+  text-align: center;       /* Center aligned for large screens */
+  max-width: 700px;         /* Prevents text spreading too wide */
+  margin: 0 auto;
+}
+
+/* Keyframes for fade-in-up effect */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Hero Background */
+.about-hero-new {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-bg-img-new {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.overlay-new {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 1;
+}
+
+/* Hero Text */
+.hero-title-new {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.hero-desc-new {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+/* Button */
+.btn-primary-new {
+  background: #ff6f61;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 35px;
+  font-weight: 600;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn-primary-new:hover {
+  background: #ff543f;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .about-hero-new { height: 500px; }
+  .hero-title-new { font-size: 2.4rem; }
+  .hero-desc-new { font-size: 1rem; }
+}
+
+@media (max-width: 768px) {
+  .about-hero-new { height: 420px; }
+  .hero-title-new { font-size: 1.9rem; }
+  .hero-desc-new { font-size: 0.95rem; }
+  .hero-content-new { padding: 25px 20px; }
+}
+
+@media (max-width: 480px) {
+  .about-hero-new { height: 380px; }
+  .hero-title-new { font-size: 1.6rem; }
+  .hero-desc-new { font-size: 0.85rem; margin-bottom: 15px; }
+  .btn-primary-new { width: 100%; padding: 12px 0; border-radius: 35px; }
+}
+
+</style>
+
+
+<section class="about-hero-new">
+  <div class="overlay-new"></div>
+  <img src="aboutpage.jpg" alt="Prayagraj River Sangam" class="hero-bg-img-new" />
+  <div class="hero-content-new wrap">
+    <h1 class="hero-title-new">Welcome to Prayagraj</h1>
+    <p class="hero-desc-new">Explore the city of confluence, culture, and history — from sacred rivers to vibrant festivals and historic landmarks.</p><br>
+    <a href="#city-intro" class="btn-primary-new">Discover More</a>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="about-section">
+  <h2>About Our Journey</h2>
+  <p>Experience the beauty, culture, and heritage of destinations we explore together.</p>
+
+  <div class="video-container">
+    <video autoplay muted loop playsinline preload="auto">
+      <source src="prayag.webm" type="video/mp4">
+   
+    </video>
+  </div>
+</section>
+
+
+
+
+
+<!-- ========================== -->
+<!-- 1. City Introduction -->
+<!-- ========================== -->
+<section class="city-intro">
+  <div class="container">
+    <div class="text">
+      <h2>Prayagraj — <span style="color:#ff6f61;">City of Confluence</span></h2>
+      <p><strong>Location:</strong> Uttar Pradesh, India</p>
+      <p>Prayagraj, historically known as Allahabad, is one of the most iconic cities in India. Nestled at the confluence of the holy rivers <strong>Ganga, Yamuna, and the mythical Saraswati</strong>, the city has been a focal point of Indian culture, spirituality, and history for thousands of years.</p>
+      <p>The city is an amalgamation of ancient heritage and modern growth. It has been a center of learning, spirituality, and administration since ancient times. Prayagraj is famous not only for its religious significance but also for its architectural marvels, vibrant culture, and bustling marketplaces.</p>
+    
+      <p>The city’s tagline <strong>“City of Confluence” </strong> is not just spiritual but also symbolic of its cultural diversity. From pilgrims to historians, food lovers to festival enthusiasts, Prayagraj welcomes all to explore its timeless treasures.</p>
+    </div>
+    <div class="image">
+      <img src="city.jpg" alt="Prayagraj City">
+    </div>
+  </div>
+</section>
+
+<!-- ========================== -->
+<!-- 2. History & Significance -->
+<!-- ========================== -->
+<section class="history">
+  <div class="container">
+    <div class="image">
+      <img src="image2.jpg" alt="History">
+    </div>
+    <div class="text">
+      <h2>History & Significance</h2>
+      <p>Prayagraj has a rich tapestry of history that stretches back to ancient times. The city is mentioned in several epic texts like the <strong>Mahabharata</strong> and has been an important center during the Maurya, Gupta, and Mughal periods.</p>
+      <p>The <strong>Triveni Sangam</strong>, the meeting point of the three rivers, has been a site of spiritual pilgrimage for centuries. Millions of devotees come to take a holy dip in the sacred waters, believing it cleanses their soul and grants blessings.</p>
+      <p>One of the city’s most iconic monuments is the <strong>Allahabad Fort</strong>, constructed by Emperor Akbar in 1583. This massive fort represents the grandeur of Mughal architecture ans stands as a testament to the city's glorious past.</p>
+      <p>Prayagraj is also the venue of the world-renowned <strong>Kumbh Mela</strong>, held every 12 years, which attracts millions of pilgrims and visitors from across the world .</p>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ========================== -->
+<!-- 3. Tourist Attractions -->
+<!-- ========================== -->
+<section class="tourist">
+  <div class="container">
+    <h2>Tourist Attractions</h2>
+    <div class="tourist-grid">
+      <div class="card">
+        <img src="triveni.jpg" alt="Triveni Sangam">
+        <div class="card-content">
+          <h3>Triveni Sangam</h3>
+          <p>Sacred meeting point of Ganga, Yamuna, and Saraswati rivers. Popular for rituals and photography.</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="allahabad_fort.png" alt="Allahabad Fort">
+        <div class="card-content">
+          <h3>Allahabad Fort</h3>
+          <p>Historic Mughal fort built by Akbar, showcasing grand architecture and heritage.</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="anandbhawan.jpg" alt="Anand Bhavan">
+        <div class="card-content">
+          <h3>Anand Bhavan</h3>
+          <p>Residence of Nehru family, now a museum on India’s freedom struggle.</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="khusro bagh.jpg" alt="Khusro Bagh">
+        <div class="card-content">
+          <h3>Khusro Bagh</h3>
+          <p>Peaceful Mughal garden with historic tombs, ideal for walks and photography.</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div> 
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================== -->
+<!-- 4. Culture & Lifestyle -->
+<!-- ========================== -->
+<section class="culture">
+  <div class="container">
+    <div class="text">
+      <h2>Culture & Lifestyle</h2>
+      <p>Prayagraj is a city of vibrant traditions and rich culture. It hosts several major festivals, with the <strong>Kumbh Mela</strong> being the largest religious gathering in the world. Millions of devotees and tourists participate in this festival every 12 years, creating a spectacle of spirituality and human devotion.</p>
+      <p>Other local festivals like Magh Mela, Diwali celebrations, and Holi festivities showcase the city’s colorful lifestyle. Street markets and fairs provide an immersive experience of local crafts, textiles, and souvenirs.</p>
+      <p>The city’s food culture is also remarkable. Street food lovers can enjoy chaat, lassi, samosas, kachoris, and other delicacies that reflect the region’s flavors. Cafes and restaurants in the city provide both traditional and modern culinary experiences.</p>
+    </div>
+    <div class="image">
+      <img src="culture.avif" alt="Culture">
+    </div>
+  </div>
+</section>
+
+<!-- ========================== -->
+<!-- 5. Why Visit -->
+<!-- ========================== -->
+<section class="why">
+  <div class="container">
+    <div class="image">
+      <img src="img.jpg" alt="Why Visit">
+    </div>
+    <div class="text">
+      <h2>Why Visit / Experience Prayagraj</h2>
+      <p>Prayagraj’s festivals, especially the Kumbh Mela, offer a once-in-a-lifetime experience of devotion, faith, and unity on an extraordinary scale. Even outside the festival season, the city’s temples, ghats, and lively markets stay filled with energy and charm.</p>
+      <p>Food lovers can enjoy authentic local delicacies, while photographers will find endless beauty in the rivers, heritage monuments, and colorful festivities. Whether you seek peace, adventure, or cultural exploration — Prayagraj welcomes everyone with warmth and spirituality.</p>      
+    </div>
+  </div>
+</section>
+
+<!-- ========================== -->
+<!-- 6. Website / Organization Info -->
+<!-- ========================== -->
+<section class="website-info">
+  <div class="container">
+    <div class="text">
+      <h2>Website / Organization Info</h2>
+      <p><strong>Project:</strong> Prayagraj Tourism — Student/Official Version</p>
+      <p><strong>Purpose:</strong> This website has been created to provide detailed information about Prayagraj, promoting tourism, cultural awareness, and heritage education. It serves as a guide for visitors planning trips to the city.</p>
+      <p><strong>Features:</strong> Informative sections, images, detailed descriptions of attractions, cultural insights, festival calendar, and contact information for inquiries and follow-ups.</p>
+      <p><strong>Contact / Connect:</strong> You can follow us on social media platforms, reach out via email for feedback, or use the website for educational purposes. The goal is to make Prayagraj accessible and engaging for all audiences.</p>
+    </div>
+    <div class="image">
+      <img src="travel.jpg" alt="Website Info">
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
+
+
+
+
+
+
+<!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+        <li><a href="index.hmtl">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="help.html">Help & FAQ</a></li>
+          <li><a href="contact">contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>About</h3>
+        <ul>
+          <li><a href="#">About Prayagraj Tourism</a></li>
+          <li><a href="#">Wellness & Spas</a></li>
+          <li><a href="#">Best Time to Visit</a></li>
+          <li><a href="#">Prayag Tourist Destinations</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>📍 18-A, D.D.A SCO Complex, Defence Colony, Prayagraj</p>
+        <p>📞 +91-11-23365358, 23363607</p>
+        <p>📧 tourism@prayagrajtourism.gov.in</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>App</h3>
+        <p>Download "Apna Prayag" App:</p>
+        <a href="#"> 🔍 Google</a><br>
+        <a href="#"> ▶ Play store</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Prayagraj Tourism. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

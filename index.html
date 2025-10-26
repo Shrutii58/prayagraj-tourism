@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prayagraj Tourism</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS Link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <div class="logo">Prayag<span>raj</span></div>
+
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger">☰</label>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="explore.html">Explore the City</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="help.html">Help & FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-icons">
+        <span>📞</span>
+        <span>🔍</span>
+        <span>👤</span>
+      </div>
+    </div>
+  </header>
+<style>
+/* ===== HERO SECTION RESPONSIVE (Contact/Help style) ===== */
+@media (max-width: 1024px) {
+  .hero { height: 500px; }
+  .hero-text h1 { font-size: 2.4rem; }
+  .hero-text .lead { font-size: 1rem; }
+  .hero-card { width: 180px; }
+  .hero-ctas { gap: 15px; }
+}
+
+@media (max-width: 768px) {
+  .hero { height: 420px; }
+  .hero-content { flex-direction: column; align-items: center; gap: 15px; }
+  .hero-text h1 { font-size: 1.9rem; }
+  .hero-text .lead { font-size: 0.95rem; }
+  .hero-card { display: none; }
+  .hero-ctas { flex-direction: column; gap: 10px; }
+}
+
+@media (max-width: 480px) {
+  .hero { height: 380px; }
+  .hero-text h1 { font-size: 1.6rem; }
+  .hero-text .lead { font-size: 0.85rem; margin-bottom: 20px; }
+  .hero-ctas { flex-direction: column; gap: 10px; }
+  .btn { width: 70%; text-align: center; padding: 12px 0; }
+}
+
+</style>
+  <!-- ======= HERO ======= -->
+  <section class="hero" id="hero" role="region" aria-label="Hero">
+    <div class="hero-overlay"></div>
+    <img src="homepage.jpg" alt="River Sangam at sunset, Prayagraj" class="hero-img" />
+    <div class="wrap hero-content">
+      <div class="hero-text">
+        <h1>Prayagraj</h1>
+        <p class="lead">Discover ancient ghats, timeless festivals,</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#explore">Explore Places</a>
+          <a class="btn btn-outline" href="plan.html">Plan Your Trip</a>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-hidden="true">
+        <div class="card-top">Quick Info</div>
+        <ul class="quick-info">
+          <li><strong>Best time:</strong> Oct–Mar</li>
+          <li><strong>Language:</strong> Hindi / English</li>
+          <li><strong>Currency:</strong> INR</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+
+
+<!-- ===== ABOUT PRAYAGRAJ SECTION ===== -->
+<section class="about">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="about.jpeg" alt="About Prayagraj">
+    </div>
+
+    <div class="about-content">
+      <h2>About Prayagraj</h2>
+      <p>
+        Known as the “City of Sangam”, Prayagraj is one of India’s most sacred and historic cities.
+        It stands at the confluence of the Ganga, Yamuna, and the mythical Saraswati rivers — 
+        symbolizing purity and unity. The city reflects the deep roots of spirituality, 
+        culture, and architectural heritage, hosting the world-famous <strong>Kumbh Mela</strong>.
+      </p>
+      <p>
+        Beyond its religious significance, Prayagraj offers travelers a glimpse into
+        India’s timeless traditions blended with modern charm. From the majestic Allahabad Fort 
+        to the peaceful ghats, every corner tells a story of devotion and history.
+      </p>
+      <a href="about.html" class="btn">Learn More</a>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- ======= HIGHLIGHTS ======= -->
+  <section class="highlights wrap" id="highlights" aria-label="Highlights">
+    <h2 class="section-title">Highlights</h2>
+    <p class="section-sub">Must-see experiences in Prayagraj</p>
+
+    <div class="grid grid-3">
+      <article class="card">
+        <img src="triveni.jpg" alt="Triveni Sangam" />
+        <div class="card-body">
+          <h3>Triveni Sangam</h3>
+          <p>Sacred confluence of three rivers — a spiritual experience at sunrise.</p>
+          <a class="card-link" href="#">Read more →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="allahabad_fort.png" alt="Allahabad Fort" />
+        <div class="card-body">
+          <h3>Allahabad Fort</h3>
+          <p>Historic fort built by Emperor Akbar with panoramic river views.</p>
+          <a class="card-link" href="#">Read more →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="market.avif" alt="Kumbh Mela" />
+        <div class="card-body">
+          <h3>Kumbh Mela</h3>
+          <p>World’s largest pilgrimage — a spectacle of faith, culture and color.</p>
+          <a class="card-link" href="#">Read more →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ======= EXPLORE PREVIEW ======= -->
+  <section class="explore wrap" id="explore" aria-label="Explore the City">
+    <h2 class="section-title">Explore the City</h2>
+    <p class="section-sub">Handpicked places, food & experiences</p>
+
+    <div class="grid grid-4">
+      <div class="mini-card">
+        <img src="chaat.webp" alt="Local cuisine" />
+        <h4>Local Cuisine</h4>
+        <p>Tea stalls, chaat & sweets you must try.</p>
+      </div>
+      <div class="mini-card">
+        <img src="saraswati ghat.webp" alt="Ghats and rituals" />
+        <h4>Ghats & Rituals</h4>
+        <p>Morning aarti and river walks.</p>
+      </div>
+      <div class="mini-card">
+        <img src="apnaprayag.jpg" alt="Heritage walks" />
+        <h4>Heritage Walks</h4>
+        <p>Guided historic city tours.</p>
+      </div>
+      <div class="mini-card">
+        <img src="market.avif" alt="Local markets" />
+        <h4>Markets & Crafts</h4>
+        <p>Handicrafts and local souvenirs.</p>
+      </div>
+    </div>
+
+    <div class="center-cta">
+      <a class="btn btn-primary" href="explore.html">See all experiences</a>
+	  <br>
+	  <br>
+    </div>
+  </section>
+
+ 
+<section class="fixed-gallery">
+  <h2>Our Photography Moments</h2>
+  <div class="gallery-frame">
+    <div class="img-box box1"><img src="nature.jpeg" alt=""></div>
+    <div class="img-box box2"><img src="img5.jpeg" alt=""></div>
+    <div class="img-box box3"><img src="museum2.jpg" alt=""></div>
+    <div class="img-box box4"><img src="triveni7.webp" alt=""></div>
+    <div class="img-box box5"><img src="img2.jpg" alt=""></div>
+    <div class="img-box box6"><img src="evening-aarti.webp" alt=""></div>
+  
+  </div>
+</section>
+
+
+
+
+
+<section class="testimonials">
+  <h2>What Our Visitors Say</h2>
+
+  <div class="testimonial-container">
+    <div class="testimonial-card">
+      <p>"It was an amazing experience visiting this beautiful city! The local culture and food were unforgettable."</p>
+      <div class="author">
+        <img src="riya.jpg" alt="visitor1">
+        <div>
+          <h4>Riya Sharma</h4>
+          <span>Traveler from Delhi</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <p>"A wonderful journey filled with colors, traditions, and warm people. I’d love to come again!"</p>
+      <div class="author">
+        <img src="mehta.jpg" alt="visitor2">
+        <div>
+          <h4>Arjun Mehta</h4>
+          <span>Tourist from Mumbai</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <p>"The best destination for peace and spirituality. Everything was well-organized and scenic."</p>
+      <div class="author">
+        <img src="neha.jpg" alt="visitor3">
+        <div>
+          <h4>Neha Verma</h4>
+          <span>Traveler from Jaipur</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="events">
+  <h2>Upcoming Events & Festivals</h2>
+
+  <div class="event-container">
+    <div class="event-card">
+      <img src="kumbh25.jpg" alt="event">
+      <div class="event-info">
+        <h3>Kumbh Mela 2025</h3>
+        <p>Experience the largest spiritual gathering in the world along the holy Triveni Sangam.</p>
+        <span class="date">📅 January 2025</span>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="evening-aarti.webp" alt="event">
+      <div class="event-info">
+        <h3>Ganga Mahotsav</h3>
+        <p>Celebrate the cultural richness of Prayagraj with lights, music, and river rituals.</p>
+        <span class="date">📅 November 2025</span>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="festival1.jpg" alt="event">
+      <div class="event-info">
+        <h3>Allahabad Literature Festival</h3>
+        <p>A treat for book lovers — discussions, poetry, and cultural performances await you.</p>
+        <span class="date">📅 February 2026</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="connect-section">
+  <h2>Stay Connected With Us</h2>
+  <p>We’d love to hear from you! Whether it’s a travel inquiry, booking, or just a message — we’re here to help.</p>
+
+  <div class="connect-container">
+
+    <!-- 📩 Contact Form -->
+    <div class="connect-box contact-form">
+      <h3>Contact / Inquiry Form</h3>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- 📰 Newsletter Signup -->
+    <div class="connect-box newsletter">
+      <h3>Newsletter Signup</h3>
+      <p>Get the latest travel updates, events, and offers straight to your inbox.</p>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <!-- 🧳 Travel Booking Form -->
+    <div class="connect-box booking-form">
+      <h3>Book Your Journey</h3>
+      <form>
+        <input type="text" placeholder="Destination" required>
+        <input type="date" required>
+        <input type="number" placeholder="No. of People" required>
+        <button type="submit">Book Now</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+         <li><a href="index.hmtl">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="help.html">Help & FAQ</a></li>
+          <li><a href="contact">contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>About</h3>
+        <ul>
+          <li><a href="#">About Prayagraj Tourism</a></li>
+          <li><a href="#">Wellness & Spas</a></li>
+          <li><a href="#">Best Time to Visit</a></li>
+          <li><a href="#">Prayag Tourist Destinations</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>📍 18-A, D.D.A SCO Complex, Defence Colony, Prayagraj</p>
+        <p>📞 +91-11-23365358, 23363607</p>
+        <p>📧 tourism@prayagrajtourism.gov.in</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>App</h3>
+        <p>Download "Apna Prayag" App:</p>
+       <a href="#"> 🔍 Google</a><br>
+        <a href="#"> ▶ Play store</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Prayagraj Tourism. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
